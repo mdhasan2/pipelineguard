@@ -49,10 +49,11 @@ def upload_file(file_path: str, scan_type: str, service_name: str) -> bool:
     }
 
     print(f"[+] Importing {scan_type} results for service '{service_name}' from {file_path}...")
+    verify_ssl = os.getenv("DEFECTDOJO_VERIFY_SSL", "true").lower() in ("true", "1", "yes")
     try:
         with open(file_path, 'rb') as f:
             files = {'file': (os.path.basename(file_path), f, 'application/json')}
-            response = requests.post(url, headers=headers, data=data, files=files, verify=False)
+            response = requests.post(url, headers=headers, data=data, files=files, verify=verify_ssl)
             
         if response.status_code in [200, 201]:
             print(f"[+] Successfully uploaded {file_path} to DefectDojo (Status: {response.status_code})")
