@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2026-06-09T16:36:47.108674173-04:00",
+  "CreatedAt": "2026-06-14T09:41:01.359203674-04:00",
   "ArtifactName": "/home/demo/blue-green-gateway",
   "ArtifactType": "filesystem",
   "Metadata": {
@@ -27,7 +27,7 @@
           "PkgName": "@tanstack/start-server-core",
           "PkgIdentifier": {
             "PURL": "pkg:npm/%40tanstack/start-server-core@1.167.22",
-            "UID": "b0b56ae4d6a39ab6"
+            "UID": "5ecb73d6b48231bd"
           },
           "InstalledVersion": "1.167.22",
           "FixedVersion": "1.167.30",
@@ -63,7 +63,7 @@
           "PkgName": "ws",
           "PkgIdentifier": {
             "PURL": "pkg:npm/ws@8.18.0",
-            "UID": "c927934f79d86a1"
+            "UID": "ebc142c9850450ca"
           },
           "InstalledVersion": "8.18.0",
           "FixedVersion": "8.20.1",

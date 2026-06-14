@@ -9,7 +9,8 @@ REPOS = {
     "blue-green-gateway": "/home/demo/blue-green-gateway",
     "pipelineguard": "/home/demo/pipelineguard",
     "clue-bdi-portfolio": "/home/demo/clue-bdi-portfolio",
-    "cluebdi-vitality-compass": "/home/demo/cluebdi-vitality-compass"
+    "cluebdi-vitality-compass": "/home/demo/cluebdi-vitality-compass",
+    "veteran-vitality-assistant": "/home/demo/veteran-vitality-assistant"
 }
 
 def run_cmd(args, cwd=None, env=None):
